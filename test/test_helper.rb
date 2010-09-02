@@ -1,4 +1,4 @@
-$:.unshift File.dirname(__FILE__) + '/../lib'
+$:.unshift File.join(File.dirname(__FILE__), '..', 'lib')
 require 'twurl'
 require 'test/unit'
 require 'rr'

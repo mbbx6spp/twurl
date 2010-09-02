@@ -1,9 +1,12 @@
 module Twurl
   class RCFile
     FILE = '.twurlrc'
-    @directory ||= ENV['HOME']
     class << self
       attr_accessor :directory
+
+      def directory
+        @directory || ENV['HOME']
+      end
 
       def file_path
         File.join(directory, FILE)

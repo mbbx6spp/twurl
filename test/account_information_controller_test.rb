@@ -1,4 +1,4 @@
-require File.dirname(__FILE__) + '/test_helper'
+require File.expand_path(File.join(File.dirname(__FILE__), 'test_helper'))
 
 class Twurl::AccountInformationController::DispatchWithNoAuthorizedAccountsTest < Test::Unit::TestCase
   attr_reader :options, :client, :controller
